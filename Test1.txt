@@ -1,1 +1,2 @@
 Test string
+Second string line
