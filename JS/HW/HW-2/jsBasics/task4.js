@@ -11,6 +11,6 @@ console.log(squareRectangle.toFixed(2));
 
 // task 4.3
 let radiusCylinder = 5;
-let heightCylinder  = 6.75;
+let heightCylinder = 6.75;
 let volumeCylinder = Math.PI * Math.pow(radiusCylinder, 2) * heightCylinder;
 console.log(volumeCylinder.toFixed(2));

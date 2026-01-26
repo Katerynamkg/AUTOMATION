@@ -1,7 +1,7 @@
 let book = {
-  title: "Wisdom",
-  author: "Superman",
-  year: "2019",
+	title: 'Wisdom',
+	author: 'Superman',
+	year: '2019',
 };
 const { title, author } = book;
 
