@@ -1,30 +1,30 @@
-import { Book } from "./Book.js";
+import { Book } from './Book.js';
 export class EBook extends Book {
-  constructor(name, author, year, format) {
-    super(name, author, year);
-    this.format = format;
-  }
+	constructor(name, author, year, format) {
+		super(name, author, year);
+		this.format = format;
+	}
 
-  get format() {
-    return this._format;
-  }
+	get format() {
+		return this._format;
+	}
 
-  set format(value) {
-        if (typeof value == "string" && value.trim().length > 0) {
-      this._format = value;
-    } else {
-      console.error("The field format is wrong");
-    }
-  }
+	set format(value) {
+		if (typeof value == 'string' && value.trim().length > 0) {
+			this._format = value;
+		} else {
+			console.error('The field format is wrong');
+		}
+	}
 
-  printInfo() {
-    super.printInfo();
-    console.log(`The book format is: ${this.format}`);
-  }
+	printInfo() {
+		super.printInfo();
+		console.log(`The book format is: ${this.format}`);
+	}
 
-  static fromBook(book, format) {
-  return new EBook(book.name, book.author, book.year, format);
-}
+	static fromBook(book, format) {
+		return new EBook(book.name, book.author, book.year, format);
+	}
 }
 
 // let ebook1 = new EBook("The Hobbit", "J.R.R. Tolkien", 1937, "FB2");
@@ -37,9 +37,7 @@ export class EBook extends Book {
 // ebook3.printInfo()
 // ebook4.printInfo()
 
-
 // console.log(ebook1.format);
 // console.log(ebook2.format);
 // console.log(ebook3.format);
 // console.log(ebook4.format);
-

@@ -1,17 +1,15 @@
-import { Book } from "./Book.js";
-import { EBook } from "./EBook.js";
+import { Book } from './Book.js';
+import { EBook } from './EBook.js';
 
+let book1 = new Book('The Hobbit', 'J.R.R. Tolkien', 1937);
+let book2 = new Book('The Lord of the Rings', 'J.R.R. Tolkien', 1954);
+let book3 = new Book('The Great Gatsby', 'F. Scott Fitzgerald', 1925);
+let book4 = new Book('Brave New World', 'Aldous Huxley', 1930);
 
-let book1 = new Book("The Hobbit", "J.R.R. Tolkien", 1937);
-let book2 = new Book("The Lord of the Rings", "J.R.R. Tolkien", 1954);
-let book3 = new Book("The Great Gatsby", "F. Scott Fitzgerald", 1925);
-let book4 = new Book("Brave New World", "Aldous Huxley", 1930);
-
-let ebook1 = new EBook("The Hobbit", "J.R.R. Tolkien", 1937, "FB2");
-let ebook2 = new EBook("The Lord of the Rings", "J.R.R. Tolkien", 1954, "EPUB");
-let ebook3 = new EBook("The Great Gatsby","F. Scott Fitzgerald", 1920,"PDF");
-let ebook4 = new EBook("Brave New World", "Aldous Huxley", 1932, "MOBI");
-
+let ebook1 = new EBook('The Hobbit', 'J.R.R. Tolkien', 1937, 'FB2');
+let ebook2 = new EBook('The Lord of the Rings', 'J.R.R. Tolkien', 1954, 'EPUB');
+let ebook3 = new EBook('The Great Gatsby', 'F. Scott Fitzgerald', 1920, 'PDF');
+let ebook4 = new EBook('Brave New World', 'Aldous Huxley', 1932, 'MOBI');
 
 // book1.printInfo();
 // book2.printInfo();
@@ -34,7 +32,6 @@ let ebook4 = new EBook("Brave New World", "Aldous Huxley", 1932, "MOBI");
 // console.log(book4.author);
 // console.log(book4.year);
 
-
 // ebook1.printInfo()
 // ebook2.printInfo()
 // ebook3.printInfo()
@@ -45,12 +42,10 @@ let ebook4 = new EBook("Brave New World", "Aldous Huxley", 1932, "MOBI");
 // console.log(ebook3.format);
 // console.log(ebook4.format);
 
-
 let books = [book1, book2, book3, book4, ebook1, ebook2, ebook3, ebook4];
 
 let oldest = Book.getOldestBook(books);
 oldest.printInfo();
 
-
-let ebookFromBook = EBook.fromBook(book1, "FB2");
+let ebookFromBook = EBook.fromBook(book1, 'FB2');
 ebookFromBook.printInfo();
