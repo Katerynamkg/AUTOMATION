@@ -1,9 +1,10 @@
 const MainController = require('./MainController');
+let { token } = require('./token');
 
 class UserController extends MainController {
 	constructor() {
 		super();
-		this.token = null;
+		// this.token = null;
 		this.userId = null;
 	}
 
@@ -39,7 +40,7 @@ class UserController extends MainController {
 			userName: username,
 			password: password,
 		});
-        this.token = response.data.token
+        token = response.data.token
         return this.token
 	}
     saveToken(){
