@@ -1,0 +1,21 @@
+{
+	"scripts": {
+		"lint": "eslint JS/HW/**/*.js",
+		"lint:fix": "eslint JS/HW/**/*.js --fix",
+		"prepare": "husky"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.39.2",
+		"eslint": "^9.39.2",
+		"eslint-config-prettier": "^10.1.8",
+		"eslint-plugin-prettier": "^5.5.5",
+		"globals": "^17.1.0",
+		"husky": "^9.1.7",
+		"prettier": "3.8.1"
+	},
+	  "dependencies": {
+    "@types/jest": "^30.0.0",
+    "axios": "^1.13.4",
+    "jest": "^30.2.0"
+  }
+}
